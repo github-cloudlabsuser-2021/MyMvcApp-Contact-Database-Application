@@ -9,6 +9,14 @@
 <p>
     @Html.ActionLink("Create New", "Create", "User")
 </p>
+
+<form asp-action="Search" method="get">
+    <p>
+        Find by name: <input type="text" name="searchString" placeholder="Enter search term" />
+        <input type="submit" value="Search" />
+    </p>
+</form>
+
 <table class="table">
     <tr>
         <th>
